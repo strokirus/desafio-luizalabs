@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i');
-
+/**
+ * All based colors used
+ */
 :root {
   --white: #FFFFFF;
   --black: #172241;
@@ -8,13 +9,8 @@
   --blue: #1a73e8;
 }
 
-.leaflet-container {
-  height: 400px;
-  width: 100%;
-}
-
 body, html {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   line-height: 1.5;
   color: var(--black);
@@ -25,6 +21,14 @@ body, html {
 * {
   margin: 0;
   padding: 0;
+}
+
+/**
+ * Container of leaflet project to show map
+ */
+.leaflet-container {
+  height: 300px;
+  width: 100%;
 }
 
 header button {
@@ -43,6 +47,10 @@ header button {
   outline: none;
 }
 
+header button:disabled {
+  opacity: 0.5;
+}
+
 ul {
   list-style-type: none;
 }
@@ -55,9 +63,61 @@ h3 {
   font-size: 1rem;
   width: 100%;
   color: var(--black);
-  font-weight: 500;
+  font-weight: bold;
   padding: 0 0 15px 0;
   text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+
+.flex-container > * {
+  padding: 15px;
+  flex: 1 100%;
+}
+
+header {
+  max-width: 65%;
+  padding: 3% 5%;
+  margin: 0 auto;
+  background-color: var(--gray);
+}
+
+header > div {
+  display: flex;
+}
+
+header > div > p {
+  padding-top: 8px;
+  padding-right: 10px;
+}
+
+header > div > button {
+  margin-left: 10px;
+}
+
+input[type=text] {
+  font-size: 1rem;
+  font-weight: 300;
+  background-clip: padding-box;
+  transition: all .2s ease;
+  outline: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  resize: none;
+  padding: 0.6rem;
+  border: 1px solid var(--gray);
+  margin-bottom: 2rem;
+}
+
+input:hover, input:focus {
+  transition: all .2s ease;
+  cursor: auto;
 }
 
 article {
@@ -81,54 +141,22 @@ article > button {
   outline: none;
 }
 
-header > div {
-  display: flex;
-}
+@media (max-width: 620px) {
+  article {
+    max-width: 90%;
+  }
 
-header > div > p {
-  padding-top: 8px;
-  padding-right: 10px;
-}
+  header {
+    max-width: 90%;
+    padding: 1% 3%;
+  }
 
-header > div > button {
-  margin-left: 10px;
-}
+  .flex-container {
+    margin: 0.5rem auto;
+  }
 
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-  max-width: 1400px;
-  margin: 2rem auto;
-}
-
-.flex-container > * {
-  padding: 15px;
-  flex: 1 100%;
-}
-
-header {
-  max-width: 65%;
-  padding: 3% 5%;
-  margin: 0 auto;
-  background-color: var(--gray);
-}
-
-input[type=text] {
-  font-size: 1rem;
-  font-weight: 300;
-  background-clip: padding-box;
-  transition: all .2s ease;
-  outline: 0;
-  -webkit-appearance: none;
-  width: 100%;
-  resize: none;
-  padding: 0.6rem;
-  border: 1px solid var(--gray);
-  margin-bottom: 2rem;
-}
-
-input:hover, input:focus {
-  transition: all .2s ease;
-  cursor: auto;
+  .leaflet-container {
+    height: 200px;
+    width: 100%;
+  }
 }

@@ -1,0 +1,996 @@
+[debug] [2019-11-06T03:36:11.278Z] ----------------------------------------------------------------------
+[debug] [2019-11-06T03:36:11.280Z] Command:       /Users/diasalexandre/.nvm/versions/node/v9.4.0/bin/node /Users/diasalexandre/.nvm/versions/node/v9.4.0/bin/firebase serve --only functions,hosting
+[debug] [2019-11-06T03:36:11.280Z] CLI Version:   7.6.2
+[debug] [2019-11-06T03:36:11.280Z] Platform:      darwin
+[debug] [2019-11-06T03:36:11.280Z] Node Version:  v9.4.0
+[debug] [2019-11-06T03:36:11.282Z] Time:          Wed Nov 06 2019 03:36:11 GMT+0000 (WET)
+[debug] [2019-11-06T03:36:11.282Z] ----------------------------------------------------------------------
+[debug] [2019-11-06T03:36:11.282Z] 
+[debug] [2019-11-06T03:36:11.292Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-06T03:36:11.292Z] > authorizing via signed-in user
+[debug] [2019-11-06T03:36:11.292Z] [iam] checking project diasalexandre-challenges for permissions ["firebase.projects.get"]
+[debug] [2019-11-06T03:36:11.294Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/diasalexandre-challenges:testIamPermissions  
+
+[debug] [2019-11-06T03:36:12.205Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T03:36:12.207Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/diasalexandre-challenges  
+ 
+[debug] [2019-11-06T03:36:12.470Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T03:36:12.474Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/diasalexandre-challenges/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "9"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-11-06T03:36:13.083Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/diasalexandre/codes/jobs/luizalabs/functions" for Cloud Functions...
+[debug] [2019-11-06T03:36:13.109Z] [worker-~diagnostic~-180e0a6c-a37b-4932-be01-aae1fd2e3de7]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-11-06T03:36:13.341Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T03:36:13.341Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T03:36:13.344Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T03:36:13.345Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T03:36:13.346Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[app]: http function initialized (http://localhost:5001/diasalexandre-challenges/us-central1/app).
+[debug] [2019-11-06T03:36:13.915Z] [worker-~diagnostic~-180e0a6c-a37b-4932-be01-aae1fd2e3de7]: exited
+[debug] [2019-11-06T03:36:13.916Z] [worker-~diagnostic~-180e0a6c-a37b-4932-be01-aae1fd2e3de7]: FINISHED
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:36:55.453Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:36:55.457Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:36:55.915Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T03:36:55.917Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T03:36:55.921Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T03:36:55.922Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T03:36:55.923Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T03:36:56.494Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:36:56.495Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:36:56.495Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:36:56.502Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:36:56.505Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:36:56.511Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:36:56.521Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:36:57.908Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:37:58.469Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:37:58.469Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:37:58.470Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:37:58.470Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:37:58.470Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:37:58.471Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:37:58.473Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:37:58.477Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:37:58.478Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:37:59.268Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:38:01.763Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:38:01.763Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:38:01.763Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:38:01.763Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:38:01.763Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:38:01.766Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:38:01.766Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:38:01.769Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:38:01.771Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:38:02.456Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:40:44.626Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:40:44.626Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:40:44.627Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:40:44.627Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:40:44.628Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:40:44.628Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:40:44.630Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:40:44.635Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:40:44.637Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:40:45.479Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number= to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:44:40.075Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number= --> app
+[debug] [2019-11-06T03:44:40.076Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:44:40.091Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:44:40.093Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:44:40.093Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:44:40.100Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:44:40.102Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:44:40.107Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:44:40.113Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:44:40.113Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:44:50.811Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:44:50.811Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:44:50.811Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:44:50.812Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:44:50.812Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:44:50.813Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:44:50.813Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:44:50.818Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:44:50.821Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:44:51.505Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:45:29.285Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:45:29.285Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:45:29.286Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:45:29.286Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:45:29.286Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:45:29.287Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:29.288Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:29.290Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:45:29.291Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:45:29.908Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-40 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:45:31.861Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-40 --> app
+[debug] [2019-11-06T03:45:31.862Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:45:31.862Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:45:31.862Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:45:31.862Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:45:31.865Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:31.866Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:31.868Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:45:31.870Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:45:31.870Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T03:45:33.698Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T03:45:33.698Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T03:45:33.699Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T03:45:33.700Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T03:45:33.700Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T03:45:33.700Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:33.701Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T03:45:33.703Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T03:45:33.705Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T03:45:34.376Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:18:41.625Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:18:41.626Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:18:41.637Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:18:41.639Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:18:41.639Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:18:41.647Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:18:41.656Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:18:41.664Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:18:41.671Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:18:42.655Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-40 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:18:44.706Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-40 --> app
+[debug] [2019-11-06T14:18:44.707Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:18:44.708Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:18:44.708Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:18:44.708Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:18:44.709Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:18:44.710Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:18:44.712Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:18:44.715Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:18:44.716Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:21:26.919Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:21:26.919Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:21:26.924Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:21:26.926Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:21:26.926Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:21:26.931Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:21:26.932Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:21:26.937Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:21:26.941Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:21:29.058Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:23:04.410Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:23:04.410Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:23:04.411Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:23:04.412Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:23:04.412Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:23:04.412Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:23:04.414Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:23:04.417Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:23:04.419Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:23:05.226Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:23:55.083Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:23:55.083Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:23:55.084Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:23:55.084Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:23:55.084Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:23:55.086Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:23:55.088Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:23:55.091Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:23:55.092Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:23:57.654Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:24:01.470Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:24:01.470Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:24:01.471Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:24:01.478Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:24:01.478Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:24:01.479Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:01.483Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:01.486Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:24:01.490Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:24:01.864Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:24:01.883Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: BUSY
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:24:02.277Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[debug] [2019-11-06T14:24:02.429Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T14:24:02.431Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T14:24:02.437Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T14:24:02.444Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T14:24:02.449Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T14:24:03.079Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:24:03.079Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:24:03.080Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:24:03.091Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T14:24:03.091Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T14:24:03.101Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:24:03.115Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:24:04.226Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:24:05.560Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-4 --> app
+[debug] [2019-11-06T14:24:05.560Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:24:05.561Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:24:05.561Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:24:05.561Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:24:05.562Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:05.562Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:05.565Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:24:05.566Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:24:05.567Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:24:26.611Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:24:26.612Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:24:26.617Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:24:26.620Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:24:26.620Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:24:26.624Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:26.632Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:26.661Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:24:26.663Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:24:27.483Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:24:37.255Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:24:37.256Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:24:37.256Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:24:37.256Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:24:37.256Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:24:37.264Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:37.265Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:24:37.267Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:24:37.269Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:24:39.053Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:25:02.025Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:25:02.025Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:25:02.029Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:25:02.029Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:25:02.029Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:25:02.029Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:25:02.030Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:25:02.033Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:25:02.033Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:25:04.118Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-403 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:25:18.851Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-403 --> app
+[debug] [2019-11-06T14:25:18.851Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:25:18.853Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:25:18.853Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:25:18.853Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:25:18.854Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:25:18.854Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:25:18.860Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:25:18.880Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:25:20.252Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:26:37.056Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:26:37.056Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:26:37.057Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:26:37.057Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:26:37.057Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:26:37.059Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:26:37.060Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:26:37.062Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:26:37.064Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:26:38.108Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=64278-622 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:27:03.367Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=64278-622 --> app
+[debug] [2019-11-06T14:27:03.368Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:27:03.369Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:27:03.369Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:27:03.369Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:27:03.369Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:27:03.370Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:27:03.373Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:27:03.373Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting //cep?number=64278-622 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:27:03.493Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=64278-622 --> app
+[debug] [2019-11-06T14:27:03.493Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: BUSY
+[debug] [2019-11-06T14:27:03.494Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:27:03.495Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:27:03.495Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:27:03.496Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T14:27:03.497Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T14:27:03.500Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:27:03.501Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:27:05.720Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:27:06.398Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:31:12.800Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:31:12.801Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:31:12.804Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:31:12.805Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:31:12.805Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:31:12.815Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:12.817Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:12.822Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:31:12.825Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:31:14.428Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:31:30.303Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:31:30.303Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:31:30.305Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:31:30.305Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:31:30.305Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:31:30.305Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:30.307Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:30.310Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:31:30.310Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:31:31.338Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:31:44.475Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:31:44.476Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:31:44.477Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:31:44.477Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:31:44.477Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:31:44.478Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:44.480Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:31:44.484Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:31:44.485Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:31:45.943Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:32:46.871Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:32:46.872Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:32:46.878Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:32:46.880Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:32:46.880Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:32:46.882Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:32:46.884Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:32:46.892Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:32:46.892Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:32:47.713Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:33:09.586Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:33:09.586Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:33:09.586Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:33:09.587Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:33:09.587Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:33:09.588Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:33:09.589Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:33:09.596Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:33:09.596Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:33:10.447Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:33:57.111Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:33:57.111Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:33:57.112Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:33:57.112Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:33:57.112Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:33:57.113Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:33:57.114Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:33:57.129Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:33:57.131Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:33:58.878Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:34:22.039Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:34:22.039Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:34:22.045Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:34:22.045Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:34:22.045Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:34:22.045Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:34:22.049Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:34:22.054Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:34:22.054Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T14:34:24.268Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:35:24.756Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:35:24.756Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:35:24.757Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:35:24.757Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:35:24.757Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:35:24.758Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:24.759Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:24.761Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:35:24.762Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:35:25.619Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:35:30.878Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T14:35:30.879Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:35:30.880Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:35:30.881Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:35:30.881Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:35:30.881Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:30.882Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:30.892Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:35:30.893Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:35:31.545Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-405 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T14:35:33.208Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-405 --> app
+[debug] [2019-11-06T14:35:33.208Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T14:35:33.208Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T14:35:33.210Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T14:35:33.210Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T14:35:33.210Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:33.211Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T14:35:33.215Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T14:35:33.217Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T14:35:34.216Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:13:38.912Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T15:13:38.913Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: BUSY
+[debug] [2019-11-06T15:13:38.918Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:13:38.919Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:13:38.919Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:13:38.922Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T15:13:38.924Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37342.sock"}
+[debug] [2019-11-06T15:13:38.929Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:13:38.934Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting //cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:13:38.950Z] Accepted request GET /diasalexandre-challenges/us-central1/app//cep?number=69028-401 --> app
+[debug] [2019-11-06T15:13:38.950Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: BUSY
+[debug] [2019-11-06T15:13:38.953Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:13:38.953Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:13:38.953Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:13:38.957Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T15:13:38.958Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_37718.sock"}
+[debug] [2019-11-06T15:13:38.961Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:13:38.966Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:13:40.170Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: IDLE
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:13:40.240Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: IDLE
+[debug] [2019-11-06T15:15:10.537Z] File /Users/diasalexandre/codes/jobs/luizalabs/functions/index.js changed, reloading triggers
+[debug] [2019-11-06T15:15:11.555Z] [worker-pool]: Shutting down IDLE worker (app)
+[debug] [2019-11-06T15:15:11.557Z] [worker-pool]: Shutting down IDLE worker (app)
+[debug] [2019-11-06T15:15:11.566Z] [worker-~diagnostic~-63722817-d5a9-431e-a122-ada53979c2a8]: BUSY
+[debug] [2019-11-06T15:15:11.570Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: exited
+[debug] [2019-11-06T15:15:11.570Z] [worker-app-bebab9fd-d522-4807-ad3c-eeadb042ee99]: FINISHED
+[debug] [2019-11-06T15:15:11.570Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: exited
+[debug] [2019-11-06T15:15:11.570Z] [worker-app-4a993385-8f21-42c0-8360-1b6a2b1f9148]: FINISHED
+[debug] [2019-11-06T15:15:11.947Z] File /Users/diasalexandre/codes/jobs/luizalabs/functions/index.js changed, reloading triggers
+[debug] [2019-11-06T15:15:12.036Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T15:15:12.038Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T15:15:12.040Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T15:15:12.041Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:15:12.043Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:15:12.603Z] [worker-~diagnostic~-63722817-d5a9-431e-a122-ada53979c2a8]: exited
+[debug] [2019-11-06T15:15:12.603Z] [worker-~diagnostic~-63722817-d5a9-431e-a122-ada53979c2a8]: FINISHED
+[debug] [2019-11-06T15:15:12.957Z] [worker-~diagnostic~-64b1cf70-9e56-4629-998a-46f589721c02]: BUSY
+[debug] [2019-11-06T15:15:13.241Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T15:15:13.244Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T15:15:13.248Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T15:15:13.249Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:15:13.250Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:15:13.522Z] [worker-~diagnostic~-64b1cf70-9e56-4629-998a-46f589721c02]: exited
+[debug] [2019-11-06T15:15:13.522Z] [worker-~diagnostic~-64b1cf70-9e56-4629-998a-46f589721c02]: FINISHED
+[info] [hosting] Rewriting /cep?number=60288-372 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:17:31.247Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=60288-372 --> app
+[debug] [2019-11-06T15:17:31.255Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:17:31.700Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/diasalexandre/codes/jobs/luizalabs/functions","node_version":"9.4.0"}
+[debug] [2019-11-06T15:17:31.701Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-06T15:17:31.705Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-06T15:17:31.706Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:17:31.707Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/diasalexandre/codes/jobs/luizalabs/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-06T15:17:32.277Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:17:32.278Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:17:32.278Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:17:32.286Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:32.286Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:32.293Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:17:32.302Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:17:33.555Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69029-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:17:46.936Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69029-401 --> app
+[debug] [2019-11-06T15:17:46.937Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:17:46.938Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:17:46.938Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:17:46.938Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:17:46.941Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:46.941Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:46.946Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:17:46.949Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:17:47.300Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69024-018 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:17:53.858Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69024-018 --> app
+[debug] [2019-11-06T15:17:53.859Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:17:53.860Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:17:53.861Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:17:53.861Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:17:53.861Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:53.861Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:53.864Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:17:53.865Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:17:55.049Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:17:58.097Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-401 --> app
+[debug] [2019-11-06T15:17:58.098Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:17:58.099Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:17:58.099Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:17:58.099Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:17:58.100Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:58.100Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:17:58.104Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:17:58.105Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:17:58.771Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=68897-289 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:19:00.771Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=68897-289 --> app
+[debug] [2019-11-06T15:19:00.771Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:19:00.772Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:19:00.772Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:19:00.772Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:19:00.773Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:19:00.774Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:19:00.778Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:19:00.779Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:19:02.122Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=74648-735 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:19:18.785Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=74648-735 --> app
+[debug] [2019-11-06T15:19:18.785Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:19:18.786Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:19:18.787Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:19:18.787Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:19:18.788Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:19:18.790Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:19:18.792Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:19:18.793Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:19:20.662Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=78364-783 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:20:07.070Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=78364-783 --> app
+[debug] [2019-11-06T15:20:07.070Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:20:07.071Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:20:07.071Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:20:07.071Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:20:07.072Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:20:07.073Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:20:07.077Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:20:07.080Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:20:08.315Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=74638-643 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:20:51.875Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=74638-643 --> app
+[debug] [2019-11-06T15:20:51.875Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:20:51.876Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:20:51.876Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:20:51.876Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:20:51.877Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:20:51.877Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:20:51.879Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:20:51.880Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:20:53.127Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=43764-783 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:22:19.268Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=43764-783 --> app
+[debug] [2019-11-06T15:22:19.268Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:22:19.269Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:22:19.269Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:22:19.269Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:22:19.270Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:22:19.271Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:22:19.273Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:22:19.274Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:22:20.485Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=43643-786 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:22:54.467Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=43643-786 --> app
+[debug] [2019-11-06T15:22:54.467Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:22:54.467Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:22:54.468Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:22:54.471Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:22:54.472Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:22:54.473Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:22:54.475Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:22:54.476Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:22:55.705Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=43647-836 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:23:55.701Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=43647-836 --> app
+[debug] [2019-11-06T15:23:55.701Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:23:55.706Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:23:55.708Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:23:55.708Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:23:55.712Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:23:55.715Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:23:55.719Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:23:55.723Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T15:23:58.014Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=47364-783 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:24:35.252Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=47364-783 --> app
+[debug] [2019-11-06T15:24:35.253Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:24:35.253Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:24:35.253Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:24:35.254Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:24:35.254Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:24:35.255Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:24:35.257Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:24:35.258Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:24:37.084Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=83647-647 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:20.628Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=83647-647 --> app
+[debug] [2019-11-06T15:25:20.628Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:20.629Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:20.630Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:20.630Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:20.632Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:20.633Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:20.635Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:20.635Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:22.144Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:27.464Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-401 --> app
+[debug] [2019-11-06T15:25:27.464Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:27.465Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:27.465Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:27.465Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:27.466Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:27.466Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:27.469Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:27.470Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:28.188Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-402 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:30.321Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-402 --> app
+[debug] [2019-11-06T15:25:30.321Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:30.325Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:30.326Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:30.326Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:30.326Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:30.327Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:30.331Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:30.332Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:31.001Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:32.088Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:32.088Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:32.090Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:32.090Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:32.090Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:32.090Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.091Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.094Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:32.098Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:32.100Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:32.240Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:32.240Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:32.241Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:32.241Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:32.241Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:32.242Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.243Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.254Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:32.254Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:32.257Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:32.354Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:32.356Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:32.358Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:32.358Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:32.358Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:32.358Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.359Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.362Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:32.362Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:32.364Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:32.488Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:32.488Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:32.489Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:32.489Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:32.489Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:32.490Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.490Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:32.493Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:32.496Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:32.497Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:33.513Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:33.513Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:33.513Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:33.514Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:33.514Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:33.514Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:33.515Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:33.517Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:33.518Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:33.518Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:33.849Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:33.849Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:33.849Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:33.850Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:33.850Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:33.850Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:33.851Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:33.853Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:33.857Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:33.857Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:34.048Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:34.048Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:34.049Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:34.049Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:34.049Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:34.050Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:34.055Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:34.059Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:34.059Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:34.062Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-4 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:25:43.205Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-4 --> app
+[debug] [2019-11-06T15:25:43.205Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:25:43.205Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:25:43.206Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:25:43.206Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:25:43.206Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:43.207Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:25:43.209Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:25:43.210Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:25:43.213Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=47648-726 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:26:07.291Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=47648-726 --> app
+[debug] [2019-11-06T15:26:07.291Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:26:07.292Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:26:07.292Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:26:07.292Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:26:07.293Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:26:07.294Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:26:07.296Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:26:07.296Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~2s
+[debug] [2019-11-06T15:26:09.555Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:27:19.765Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-401 --> app
+[debug] [2019-11-06T15:27:19.765Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:27:19.766Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:27:19.766Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:27:19.766Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:27:19.767Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:27:19.768Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:27:19.770Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:27:19.771Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:27:20.650Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69094-734 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:27:26.386Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69094-734 --> app
+[debug] [2019-11-06T15:27:26.387Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:27:26.387Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:27:26.387Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:27:26.387Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:27:26.388Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:27:26.388Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:27:26.390Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:27:26.392Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:27:27.178Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep/?number=69028-4016 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:41:29.757Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep/?number=69028-4016 --> app
+[debug] [2019-11-06T15:41:29.758Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:41:29.767Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:41:29.772Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:41:29.772Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:41:29.776Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:41:29.779Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:41:29.847Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:41:29.852Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:41:29.853Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep/?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T15:41:31.708Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep/?number=69028-401 --> app
+[debug] [2019-11-06T15:41:31.708Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T15:41:31.709Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T15:41:31.710Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T15:41:31.710Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T15:41:31.710Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:41:31.712Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T15:41:31.714Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T15:41:31.716Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T15:41:33.234Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=74634-783 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:44:42.209Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=74634-783 --> app
+[debug] [2019-11-06T16:44:42.210Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:44:42.224Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:44:42.225Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:44:42.225Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:44:42.230Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:42.232Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:42.281Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:44:42.311Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:44:44.009Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:44:49.638Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-401 --> app
+[debug] [2019-11-06T16:44:49.638Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:44:49.638Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:44:49.639Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:44:49.639Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:44:49.639Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:49.640Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:49.642Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:44:49.643Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:44:50.502Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=74863-478 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:44:56.530Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=74863-478 --> app
+[debug] [2019-11-06T16:44:56.530Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:44:56.531Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:44:56.531Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:44:56.531Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:44:56.532Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:56.532Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:44:56.535Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:44:56.535Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:44:57.670Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69029-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:45:05.370Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69029-401 --> app
+[debug] [2019-11-06T16:45:05.370Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:45:05.370Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:45:05.371Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:45:05.371Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:45:05.371Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:45:05.372Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:45:05.375Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:45:05.376Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:45:05.722Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=36473-864 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:46:20.803Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=36473-864 --> app
+[debug] [2019-11-06T16:46:20.803Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:46:20.804Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:46:20.804Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:46:20.804Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:46:20.805Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:20.806Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:20.809Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:46:20.811Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:46:22.312Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=62857-387 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:46:44.211Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=62857-387 --> app
+[debug] [2019-11-06T16:46:44.211Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:46:44.212Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:46:44.212Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:46:44.212Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:46:44.213Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:44.214Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:44.215Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:46:44.216Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:46:45.557Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE
+[info] [hosting] Rewriting /cep?number=69028-401 to http://localhost:5001/diasalexandre-challenges/us-central1/app for local Function app
+[debug] [2019-11-06T16:46:49.260Z] Accepted request GET /diasalexandre-challenges/us-central1/app/cep?number=69028-401 --> app
+[debug] [2019-11-06T16:46:49.260Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: BUSY
+[debug] [2019-11-06T16:46:49.261Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-06T16:46:49.261Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-06T16:46:49.261Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-06T16:46:49.262Z] {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:49.262Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/n2/3flz_3zs2msgdbrl76fwk3pr0000gn/T/firebase_emulator_invocation_38040.sock"}
+[debug] [2019-11-06T16:46:49.264Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-06T16:46:49.264Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-06T16:46:50.115Z] [worker-app-5e277aab-d5d0-4d62-8fd5-b08087ed08f7]: IDLE

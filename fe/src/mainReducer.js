@@ -5,4 +5,7 @@ const mainReducer = combineReducers({
   app,
 });
 
+/**
+ * Describe all reducers used in project
+ */
 export default mainReducer;

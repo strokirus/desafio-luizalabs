@@ -4,8 +4,9 @@ const initialState = {
   result: undefined,
   isLoading: true,
   search: '',
-  error: false,
+  error: 200,
   open: false,
+  availableButton: false,
 };
 
 const appReducer = (state, action) => {
@@ -16,7 +17,7 @@ const appReducer = (state, action) => {
         ...state,
         isLoading: true,
         open: true,
-        error: false,
+        error: 200,
         result: undefined,
       };
 
@@ -24,7 +25,7 @@ const appReducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        error: false,
+        error: 200,
         result: action.data || undefined,
       };
 
@@ -32,13 +33,14 @@ const appReducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        error: true,
+        error: action.error,
       };
 
     case C.SET_SEARCH:
       return {
         ...state,
         search: action.params,
+        availableButton: action.params.length === 9,
       };
 
     case C.TOGGLE_CEP:

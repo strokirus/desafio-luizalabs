@@ -1,7 +1,7 @@
 import React from 'react';
-import { func, string, boolean } from 'prop-types';
+import { func, string, bool } from 'prop-types';
 
-const SearchContainer = ({ onUpdate, text, onClick, availableButton }) => (
+const SearchContainer = ({ onUpdate, text, onClick, availableButton, onKeyUp }) => (
   <header>
     <h3>Consultar</h3>
     <div>
@@ -10,9 +10,12 @@ const SearchContainer = ({ onUpdate, text, onClick, availableButton }) => (
         type="text"
         value={text}
         onChange={onUpdate}
+        onKeyUp={onKeyUp}
         placeholder="00000-000"
         pattern="\d*"
         maxLength="9"
+        tabIndex="0"
+        autoFocus
       />
       <button type="button" onClick={onClick} disabled={!availableButton}>Buscar</button>
     </div>
@@ -23,12 +26,14 @@ SearchContainer.propTypes = {
   onUpdate: func.isRequired,
   onClick: func.isRequired,
   text: string,
-  availableButton: boolean,
+  availableButton: bool,
+  onKeyUp: func,
 };
 
 SearchContainer.defaultProps = {
   text: '',
-  availableButton: true,
+  availableButton: false,
+  onKeyUp: () => {},
 };
 
 export default SearchContainer;

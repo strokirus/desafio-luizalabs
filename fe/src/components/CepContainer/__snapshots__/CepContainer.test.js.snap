@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) CepContainer should render an CepContainer with error 412 1`] = `
+<article>
+  <h3>
+    CEP mal formado
+  </h3>
+  <button
+    onClick={[MockFunction]}
+  >
+    x
+  </button>
+</article>
+`;
+
+exports[`(Component) CepContainer should render an CepContainer with error 417 1`] = `
+<article>
+  <h3>
+    CEP inexistente
+  </h3>
+  <button
+    onClick={[MockFunction]}
+  >
+    x
+  </button>
+</article>
+`;
+
+exports[`(Component) CepContainer should render an CepContainer with loading state 1`] = `
+<article>
+  <h3>
+    Carregando
+  </h3>
+  <button
+    onClick={[MockFunction]}
+  >
+    x
+  </button>
+</article>
+`;
+
+exports[`(Component) CepContainer should render an CepContainer with result 1`] = `
+<article>
+  <h1>
+    Rua Sargento Aguiar
+  </h1>
+  <p>
+    Próximo
+  </p>
+  <p>
+    Flores
+  </p>
+  <p>
+    Manaus
+     - 
+    AM
+  </p>
+  <p>
+    69028-401
+  </p>
+  <button
+    onClick={[MockFunction]}
+  >
+    x
+  </button>
+</article>
+`;

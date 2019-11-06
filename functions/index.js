@@ -51,6 +51,12 @@ app.get('/cep', (req, res) => {
     
         const r = await rp(options);
 
+        if (r.erro) {
+            res.status(417).json(r);
+
+            return false;
+        }
+
         r.geo = await getCoordinates(`${r.logradouro} ${r.complemento} ${r.bairro} ${r.localidade} ${r.uf}`);
     
         res.status(200).json(r);

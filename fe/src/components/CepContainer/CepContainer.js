@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, boolean, func } from 'prop-types';
+import { object, bool, func, number } from 'prop-types';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 
 const CepContainer = ({ result, isLoading, error, closeCep }) => (
@@ -8,8 +8,12 @@ const CepContainer = ({ result, isLoading, error, closeCep }) => (
       <h3>Carregando</h3>
     }
 
-    {error &&
-      <h3>Something looks wrong</h3>
+    {error === 417 &&
+      <h3>CEP inexistente</h3>
+    }
+
+    {error === 412 &&
+      <h3>CEP mal formado</h3>
     }
 
     {result.logradouro &&
@@ -43,16 +47,16 @@ const CepContainer = ({ result, isLoading, error, closeCep }) => (
 );
 
 CepContainer.propTypes = {
-  result: string,
-  isLoading: boolean,
-  error: boolean,
+  result: object,
+  isLoading: bool,
+  error: number,
   closeCep: func,
 };
 
 CepContainer.defaultProps = {
   result: {},
   isLoading: true,
-  error: false,
+  error: 200,
   closeCep: () => {},
 };
 
