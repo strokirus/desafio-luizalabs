@@ -1,0 +1,86 @@
+[debug] [2019-11-06T16:59:08.422Z] ----------------------------------------------------------------------
+[debug] [2019-11-06T16:59:08.424Z] Command:       /Users/diasalexandre/.nvm/versions/node/v9.4.0/bin/node /Users/diasalexandre/.nvm/versions/node/v9.4.0/bin/firebase deploy
+[debug] [2019-11-06T16:59:08.424Z] CLI Version:   7.6.2
+[debug] [2019-11-06T16:59:08.424Z] Platform:      darwin
+[debug] [2019-11-06T16:59:08.424Z] Node Version:  v9.4.0
+[debug] [2019-11-06T16:59:08.425Z] Time:          Wed Nov 06 2019 16:59:08 GMT+0000 (WET)
+[debug] [2019-11-06T16:59:08.425Z] ----------------------------------------------------------------------
+[debug] [2019-11-06T16:59:08.425Z] 
+[debug] [2019-11-06T16:59:08.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-06T16:59:08.435Z] > authorizing via signed-in user
+[debug] [2019-11-06T16:59:08.435Z] [iam] checking project diasalexandre-challenges for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-11-06T16:59:08.437Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/diasalexandre-challenges:testIamPermissions  
+
+[debug] [2019-11-06T16:59:09.520Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T16:59:09.522Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/diasalexandre-challenges  
+ 
+[debug] [2019-11-06T16:59:09.867Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'diasalexandre-challenges'...
+[info] 
+[info] i  deploying functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2019-11-06T16:59:12.862Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0",
+    "jsonschema": "^1.2.4",
+    "opencage-api-client": "^0.5.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-11-06T16:59:12.863Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/diasalexandre-challenges/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-11-06T16:59:12.864Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/diasalexandre-challenges/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-11-06T16:59:13.986Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T16:59:14.003Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-11-06T16:59:14.004Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/diasalexandre-challenges/adminSdkConfig  
+ 
+[debug] [2019-11-06T16:59:14.227Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T16:59:14.228Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/diasalexandre-challenges/versions  
+
+[debug] [2019-11-06T16:59:16.070Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-11-06T16:59:16.074Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/diasalexandre-challenges/configs  
+ 
+[debug] [2019-11-06T16:59:16.489Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (41.51 KB) for uploading
+[debug] [2019-11-06T16:59:17.125Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/diasalexandre-challenges/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2019-11-06T16:59:17.771Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-06T16:59:17.772Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-a5a4802f-7a50-477e-a90c-db7f934100c6/21966253-9e6a-4272-8e53-734b0d20ffb6.zip?GoogleAccessId=service-903763976317@gcf-admin-robot.iam.gserviceaccount.com&Expires=1573061402&Signature=HY3TRjdAaqKbC27ThZXnTkVbxaK2%2B18r1r1%2B8hxjwebfsgDwT2IwrSx94tEWej%2F5sxLAe9u8R8cNFVgf4FbNdXLqFi7TUNzTyPISwcPihCmDnsv9%2FVl49VMNqAEH%2FdjkgXy9jLWrQ3nJwpvR5gejEvEzpxz2yVYtpCj3AFqCZEUvjQxgZ3ErTtz%2FjTJyAlvz7zta6IhKXjZRe2IZ7VtT1jZ0NaVXSN9LRvC8Omyk61dJXehrUNsKu2sNdtPOcx9GRU%2BFdAn2lKTSWP4Ir0DgbDYGbALqjOu5C51N%2Fay9kddUdkFK%2F%2BvU9%2Bas4laxkl3s261%2BznoW71npdBw3PsnnIQ%3D%3D  
+ <request body omitted>
+[debug] [2019-11-06T16:59:18.221Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[info] i  hosting[diasalexandre-challenges]: beginning deploy...
+[info] i  hosting[diasalexandre-challenges]: found 12 files in public
+[debug] [2019-11-06T16:59:18.259Z] [hosting] hash cache [cHVibGlj] stored for 12 files
+[debug] [2019-11-06T16:59:18.260Z] [hosting][hash queue][FINAL]
+[debug] [2019-11-06T16:59:18.260Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/diasalexandre-challenges/versions/e008ac099f2c1eb9:populateFiles  
+ <request body omitted>
