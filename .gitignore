@@ -1,4 +1,5 @@
 fe/node_modules
 fe/public
+fe/package-lock.json
 functions/node_modules
 functions/package-lock.json
