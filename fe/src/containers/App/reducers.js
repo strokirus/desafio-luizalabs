@@ -48,6 +48,7 @@ const appReducer = (state, action) => {
         ...state,
         open: !state.open,
         search: !state.open ? state.search : '',
+        availableButton: false,
       };
 
     default:

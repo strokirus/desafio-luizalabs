@@ -2,7 +2,7 @@
  * Insert and force certain rules to cep (postal code in Brazil)
  *
  * @param value Value inserted by user
- * @return Value formatted by rules of cep (postal code in Brazil)
+ * @return {String} formatted by rules of cep (postal code in Brazil)
  */
 export const cepMask = value => (
   value
